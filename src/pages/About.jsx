@@ -1,9 +1,12 @@
-import React from 'react'
+// src\pages\About.jsx
+import { useLocation } from "react-router-dom";
 
-const About = () => {
+export function About() {
+  const location = useLocation();
+  console.log(location);
   return (
-    <div>About</div>
-  )
-}
-
-export default About
+    <div>
+      about
+    </div>
+  );
+};
